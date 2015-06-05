@@ -9,9 +9,24 @@
 	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 </head>
 <body>
-	<div data-role="page">
+	<!--Eine Seitenansicht-->
+	<div data-role="page" id="main">
 		<div data-role="header">
-			<h1>Hello World</h1>
+			<h1>Main</h1>
+		</div>
+		<div role="main" class="ui-content">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident dicta architecto suscipit, reprehenderit, quam dignissimos minus nemo cumque, consectetur iste rem aliquam praesentium excepturi ab velit, sint reiciendis incidunt aut?</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum facere mollitia eius sed nihil autem minima ipsum maiores omnis, quo voluptates quia saepe error molestias. Qui, dolorum quam nesciunt rem.</p>
+			<p>
+				<a href="#sub" class="ui-btn">Subpage</a>
+			</p>
+		</div>
+	</div>
+
+	<!--Zweite Seitenansicht-->
+	<div data-role="page" id="sub">
+		<div data-role="header">
+			<h1>Subpage</h1>
 		</div>
 		<div role="main" class="ui-content">
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident dicta architecto suscipit, reprehenderit, quam dignissimos minus nemo cumque, consectetur iste rem aliquam praesentium excepturi ab velit, sint reiciendis incidunt aut?</p>
