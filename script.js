@@ -16,13 +16,16 @@ $(document).ready(function(){
 				data: {
 					units: 'si',
 					lang: 'de'
-				},
+					},
 			dataType: 'jsonp'
 
 			}).done(function(data){
 				console.log(data);
 
 			});
+
+			$('.temperatur').text(koordinaten.currently.apparentTemperature);
+			$('.description').text(koordinaten.currently.summary);
 	});
 });
 
