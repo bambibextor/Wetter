@@ -24,7 +24,6 @@ $(document).ready(function(){
 
 			});
 
-			$('.temperatur').text(koordinaten.currently.apparentTemperature);
 			$('.description').text(koordinaten.currently.summary);
 	});
 });
