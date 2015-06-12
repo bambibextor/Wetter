@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"> <!--Wir sagen, dass immer die Breite, welche das Gerät verfügt-->
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="mobile-web-app-capable" content="yes">
+	<title>Wetter</title>
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="script.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+
+	<link rel="apple-touch-icon" href="sonne.png">  
+	<link rel="apple-touch-icon-precomposed" href="sonne.png">
+</head>
+<body>
+	<!--Eine Seitenansicht-->
+	<div data-role="page" id="main">
+		<div data-role="header">
+			<h1>Main</h1>
+		</div>
+		<div role="main" class="ui-content">
+		<h2 class="longitude"></h2>
+		<h2 class="latitude"></h2>
+		<h2 class="accuracy"></h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident dicta architecto suscipit, reprehenderit, quam dignissimos minus nemo cumque, consectetur iste rem aliquam praesentium excepturi ab velit, sint reiciendis incidunt aut?</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum facere mollitia eius sed nihil autem minima ipsum maiores omnis, quo voluptates quia saepe error molestias. Qui, dolorum quam nesciunt rem.</p>
+			<p>
+				<a href="#sub" data-transition="flip" class="ui-btn">Subpage</a>
+			</p>
+		</div>
+	</div>
+
+	<!--Zweite Seitenansicht-->
+	<div data-role="page" id="sub">
+		<div data-role="header" data-add-back-btn="true">
+			<h1>Subpage</h1>
+		</div>
+		<div role="main" class="ui-content">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident dicta architecto suscipit, reprehenderit, quam dignissimos minus nemo cumque, consectetur iste rem aliquam praesentium excepturi ab velit, sint reiciendis incidunt aut?</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum facere mollitia eius sed nihil autem minima ipsum maiores omnis, quo voluptates quia saepe error molestias. Qui, dolorum quam nesciunt rem.</p>
+						<p>
+				<!--<a href="#main" data-transition="flip"  data-direction="reverse" class="ui-btn">Back</a>-->
+			</p>
+		</div>
+	</div>
+</body>
+</html>
