@@ -24,7 +24,7 @@ $(document).ready(function(){
 				$('.temperatur').text(data.currently.apparentTemperature+ ' °C');
 				$('.description').text(data.currently.summary);
 				//google geocoding anfrage
-				$ajax({
+				$.ajax({
 					url: 'https:maps.googleapis.com/maps/api/geocode/json',
 					data: {
 						latlng: koordinaten.latitude +','+ koordinaten.longitude,
