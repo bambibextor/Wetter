@@ -31,9 +31,9 @@ $(document).ready(function(){
 						key: 'AIzaSyDgYh-UffzCV54XCcReML4WSqyb0_zv8x8',
 						language: 'de'
 					}
-				}).done(function(data)){
+				}).done(function(data){
 					console.log(data);
-				}
+				});
 
 			});
 
