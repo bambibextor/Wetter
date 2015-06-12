@@ -34,6 +34,7 @@ $(document).ready(function(){
 				}).done(function(data){
 					console.log(data);
 					$('.address').text(data.results[0].formatted_address);
+					$('.street').text(data.results[0].address_components[1].long_name);
 				});
 
 			});
