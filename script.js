@@ -21,10 +21,12 @@ $(document).ready(function(){
 
 			}).done(function(data){
 				console.log(data);
+				$('.temperatur').text(data.currently.apparentTemperature);
+				$('.description').text(data.currently.summary);
 
 			});
 
-			$('.description').text(koordinaten.currently.summary);
+
 	});
 });
 
