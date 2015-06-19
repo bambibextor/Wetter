@@ -1,4 +1,9 @@
 $(document).ready(function(){
+	var skycons = new Skycons({
+		color: "#ffb90f",
+		resizeClear: true
+	});
+
 	navigator.geolocation.getCurrentPosition(function(position){
 		//hier suchen wir die aktuellen koordinaten
 
@@ -16,13 +21,18 @@ $(document).ready(function(){
 				data: {
 					units: 'si',
 					lang: 'de'
-					},
+				},
 			dataType: 'jsonp'
 
 			}).done(function(data){
 				console.log(data);
 				$('.temperatur').text(data.currently.apparentTemperature+ ' °C');
-				$('.description').text(data.currently.summary);
+				$('.summary-currently').text(data.currently.summary);
+				$('.summary-daily').text(data.daily.summary);
+				skycons.add($('.js-icon')[0], data.currently.icon);
+				skycons.play();
+				skycons.add($('.js-icon-daily')[0], data.daily.icon);
+				skycons.play();
 				//google geocoding anfrage
 				$.ajax({
 					url: 'https:maps.googleapis.com/maps/api/geocode/json',
@@ -41,6 +51,14 @@ $(document).ready(function(){
 
 
 	});
+
+	
+	//skycons.add($('.js-icon')[0], Skycons.RAIN);
+	//skycons.play();
+
+	//setTimeout (function(){
+	//	skycons.set($('.js-icon')[0], Skycons.PARTLY_CLOUDY_DAY);
+	//}, 5000);
 });
 
 // https://maps.googleapis.com/maps/api/geocode/json?latlng=40.714224,-73.961452&key=AIzaSyDgYh-UffzCV54XCcReML4WSqyb0_zv8x8

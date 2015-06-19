@@ -1,0 +1,30 @@
+* {
+	text-align: center;
+	margin: auto;
+}
+
+#main {
+	height: auto;
+	margin: 20px 0;
+}
+
+p {
+	margin: 20px 0; 
+}
+
+h1 {
+	text-align: center;
+	font-size: 3em;
+}
+
+h2 {
+	text-align: center;
+	font-size: 3em;
+	padding: 20px 0;
+}
+canvas {
+	margin: auto;
+	display: block;
+	height: 128px;
+	width: 128px;
+}
